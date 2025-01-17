@@ -1,11 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome main page</title>
-</head>
-<body>
-<h1>Welcome main page</h1>
-<p>Welcome <em>Anonymous!</em></p>
-</body>
-</html>
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - Mon Portefolio{% endblock %}
+
+{% block body %}
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h2>Mon Portefolio</h2>
+            <nav>
+                <a href="#" class="text-white text-decoration-none mx-3">Accueil</a>
+                <a href="#about" class="text-white text-decoration-none mx-3">À propos</a>
+                <a href="#projects" class="text-white text-decoration-none mx-3">Projets</a>
+                <a href="#contact" class="text-white text-decoration-none mx-3">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero text-center text-white d-flex flex-column justify-content-center align-items-center" style="height: 100vh; background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+        <h1 class="display-4">Bienvenue sur mon Portefolio</h1>
+        <p class="lead">Découvrez mes projets, mon parcours et contactez-moi.</p>
+        <a href="#about" class="btn btn-light btn-lg">En savoir plus</a>
+    </section>
+
+    <footer class="bg-dark text-white py-3 text-center">
+        <p>&copy; {{ "now"|date('Y') }} Mon Portefolio. Tous droits réservés.</p>
+    </footer>
+{% endblock %}
