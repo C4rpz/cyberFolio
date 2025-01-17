@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Projets{% endblock %}
+
+{% block body %}
+<h1 class="mb-3">Nos Projets</h1>
+<div class="row">
+    {% for project in projects %}
+        <div class="col-md-4">
+            <div class="card mb-4">
+                {% if project.screenshot %}
+                    <img src="{{ asset('uploads/' ~ project.screenshot) }}" class="card-img-top" alt="screenshot">
+                {% endif %}
+                <div class="card-body">
+                    <h5>{{ project.title }}</h5>
+                    <p>{{ project.description }}</p>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <p>Aucun projet n'est disponible pour le moment.</p>
+    {% endfor %}
+</div>
+{% endblock %}
