@@ -19,7 +19,7 @@ Problèmes dans les chemins non résolues car je ne vois pas quel pourrait
 
 ## Bilan des acquis
 
-- Pas de points précis, lors des cours il meblait avoir compris et assimilé
+- Pas de points précis. Lors des cours il semblait avoir compris et assimilé
   seulement une fois seul à la maison beaucoup d'erreurs ont emmergés et cela ne m'a
   pas aidé.
 
